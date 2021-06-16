@@ -1,0 +1,94 @@
+.container {
+    padding: 3rem 2rem;
+}
+
+.col{
+
+    & > * {
+        padding: 2.5rem;
+        line-height: 1.5rem;
+
+        img {
+            padding-bottom: 1.5rem;
+        }
+
+        h1 {
+            text-transform: uppercase;
+            font-family: $bigShoulders;
+            padding-bottom: 1.5rem;
+            font-size: 2rem;
+        }
+        
+        p {
+            padding-bottom: 1.5rem;
+        }
+
+        button {
+            font-family: $lexendDeca;
+            padding: 1rem 2rem;
+            border-radius: 2rem;
+            border: none;
+        }
+    }
+
+    &__sedan {
+        border-radius: 10px 10px 0 0;
+        background-color: $brightOrange;
+        
+        & button {
+            color: $brightOrange;
+        }
+    }
+
+    &__suv {
+        background-color: $darkCyan;
+
+        & button {
+            color: $darkCyan;
+        }
+    }
+
+    &__luxury {
+        border-radius: 0 0 10px 10px;
+        background-color: $veryDarkCyan;
+
+        & button {
+            color: $veryDarkCyan;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;   
+        height: 100vh;
+    }
+
+    .col {
+        max-width: 900px;
+        display: flex;
+        
+        
+        & > * {
+            padding: 3rem 2.9rem;
+
+            p{
+                padding-bottom: 5rem
+            }
+
+            img, h1{
+                margin-bottom: 1rem;
+            }
+        } 
+
+        &__sedan {
+            border-radius: 10px 0 0 10px;
+        }
+
+        &__luxury {
+            border-radius: 0 10px 10px 0;
+        }
+    }
+}

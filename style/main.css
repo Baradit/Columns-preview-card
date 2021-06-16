@@ -1,0 +1,130 @@
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  font-size: 0.9375rem;
+  font-family: "Lexend Deca", sans-serif;
+  color: #f2f2f2;
+  background-color: #f2f2f2;
+}
+
+a, a:visited, a:hover {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+.attribution {
+  color: black;
+}
+
+.container {
+  padding: 3rem 2rem;
+}
+
+.col > * {
+  padding: 2.5rem;
+  line-height: 1.5rem;
+}
+
+.col > * img {
+  padding-bottom: 1.5rem;
+}
+
+.col > * h1 {
+  text-transform: uppercase;
+  font-family: "Big Shoulders Display", cursive;
+  padding-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+.col > * p {
+  padding-bottom: 1.5rem;
+}
+
+.col > * button {
+  font-family: "Lexend Deca", sans-serif;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  border: none;
+}
+
+.col__sedan {
+  border-radius: 10px 10px 0 0;
+  background-color: #e38826;
+}
+
+.col__sedan button {
+  color: #e38826;
+}
+
+.col__suv {
+  background-color: #006970;
+}
+
+.col__suv button {
+  color: #006970;
+}
+
+.col__luxury {
+  border-radius: 0 0 10px 10px;
+  background-color: #004241;
+}
+
+.col__luxury button {
+  color: #004241;
+}
+
+@media (min-width: 768px) {
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 100vh;
+  }
+  .col {
+    max-width: 900px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .col > * {
+    padding: 3rem 2.9rem;
+  }
+  .col > * p {
+    padding-bottom: 5rem;
+  }
+  .col > * img, .col > * h1 {
+    margin-bottom: 1rem;
+  }
+  .col__sedan {
+    border-radius: 10px 0 0 10px;
+  }
+  .col__luxury {
+    border-radius: 0 10px 10px 0;
+  }
+}
+/*# sourceMappingURL=main.css.map */
